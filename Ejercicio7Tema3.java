@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Ejercicio6Tema3 {
+public class Ejercicio7Tema3 {
 	public static void main(String[] args) {
 	final int Cuota = 500;
 	final int Porcentaje_Mayores = 50;
