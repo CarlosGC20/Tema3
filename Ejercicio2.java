@@ -1,26 +1,20 @@
 import java.util.Scanner;
-
 public class Ejercicio2 {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-
-        System.out.print("Ingresa el radio de la circunferencia: ");
-        double radio = scanner.nextDouble();
-
-        double area = calcularAreaCircunferencia(radio);
-        double longitud = calcularLongitudCircunferencia(radio);
-
-        System.out.println("Área de la circunferencia: " + area);
-        System.out.println("Longitud de la circunferencia: " + longitud);
-
-        scanner.close();
-    }
-
-    public static double calcularAreaCircunferencia(double radio) {
-        return Math.PI * radio * radio;
-    }
-
-    public static double calcularLongitudCircunferencia(double radio) {
-        return 2 * Math.PI * radio;
-    }
+static Scanner entrada=new Scanner(System.in);
+	public static void main(String[] args) {
+	int num1;
+	int num2;
+	Scanner lector = new Scanner(System.in);
+	System.out.println("Introduce dos números:");
+	num1 = Integer.parseInt(lector.nextLine());
+	num2 = Integer.parseInt(lector.nextLine());
+	if (num1 > num2){
+		System.out.println("El número es mayor");
+		} else if (num1 < num2) {
+		System.out.println("El número es menor");
+		} else {
+		System.out.println("El número es igual");
+		}
+	lector.close();
+	}
 }
