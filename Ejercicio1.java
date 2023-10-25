@@ -1,16 +1,14 @@
-import java.util.Scanner;
 public class Ejercicio1 {
-static Scanner entrada=new Scanner(System.in);
-	public static void main(String[] args) {
-	int num1;
-	Scanner lector = new Scanner(System.in);
-	System.out.println("Introduce un número:");
-	num1 = Integer.parseInt(lector.nextLine());
-	if (num1%2==0){
-		System.out.println("El número es par");
-		} else {
-		System.out.println("El número es impar");
-		}
-	lector.close();
-	}
+    public static void main(String[] args) {
+        int numero1 = 5;
+        int numero2 = 7;
+
+        int resultado = sumarEnteros(numero1, numero2);
+
+        System.out.println("La suma de " + numero1 + " y " + numero2 + " es: " + resultado);
+    }
+
+    public static int sumarEnteros(int num1, int num2) {
+        return num1 + num2;
+    }
 }

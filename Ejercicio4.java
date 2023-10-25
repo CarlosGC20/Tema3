@@ -1,31 +1,30 @@
-import java.util.Scanner;
 public class Ejercicio4 {
-static Scanner entrada=new Scanner(System.in);
     public static void main(String[] args) {
-	Scanner sc = new Scanner(System.in);
-	double numero1, numero2, menor, mayor;
-	//Lectura de dos números reales distintos
-	do {
-		System.out.print("Introduce un número : ");
-		numero1 = sc.nextDouble();
-		System.out.print("Introduce otro número distinto del anterior: ");                   
-		numero2 = sc.nextDouble();
-		if(numero1 == numero2){
-		System.out.println("Debes introducir dos números distintos");
-	}
-	} while (numero1 == numero2);
-	//Calcular cuál de los números es el mayor y cuál el menor
-	if (numero1 > numero2) {
-		mayor = numero1;
-		menor = numero2;
-	} else {
-		mayor = numero2;
-		menor = numero1;
-	}
-	//Mostrar por pantalla los números desde el menor hasta el mayor.
-	System.out.println("\nNúmeros desde " + menor + " hasta " + mayor + " : ");
-	for (double i = menor; i <= mayor; i++) {
-		System.out.println(i);
-		}
-	}
+        int numero1 = 10;
+        int numero2 = 7;
+        int numero3 = 15;
+        int numero4 = 12;
+
+        int resultado = encontrarMayorDeCuatro(numero1, numero2, numero3, numero4);
+
+        System.out.println("El número mayor entre " + numero1 + ", " + numero2 + ", " + numero3 + " y " + numero4 + " es: " + resultado);
+    }
+
+    public static int encontrarMayorDeCuatro(int num1, int num2, int num3, int num4) {
+        int max = num1;
+        
+        if (num2 > max) {
+            max = num2;
+        }
+        
+        if (num3 > max) {
+            max = num3;
+        }
+        
+        if (num4 > max) {
+            max = num4;
+        }
+
+        return max;
+    }
 }

@@ -1,16 +1,14 @@
-import java.util.Scanner;
 public class Ejercicio3 {
-static Scanner entrada=new Scanner(System.in);
-	public static void main(String[] args) {
-	int num1;
-	Scanner lector = new Scanner(System.in);
-	System.out.println("Introduce un número:");
-	num1 = Integer.parseInt(lector.nextLine());
-	if (num1 < 18){
-		System.out.println("Es menor de edad");
-		} else {
-		System.out.println("Es mayor de edad");
-		}
-	lector.close();
-	}
+    public static void main(String[] args) {
+        int numero1 = 10;
+        int numero2 = 7;
+
+        int resultado = encontrarMayor(numero1, numero2);
+
+        System.out.println("El número mayor entre " + numero1 + " y " + numero2 + " es: " + resultado);
+    }
+
+    public static int encontrarMayor(int num1, int num2) {
+        return Math.max(num1, num2);
+    }
 }
